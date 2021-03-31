@@ -21,14 +21,14 @@ while running:
                 while True:
                     number = random.randint(1, 6)
                     if last_number == number:
-                        print("frick")
+                        print(last_number, number)
                     else:
                         break
 
         if event.type == pygame.QUIT:
             running = False
 
-    font = pygame.font.SysFont(None, 100)
+    font = pygame.font.SysFont("robotica", 100)
     img = font.render(str(number), True, (0, 0, 0))
 
     screen.blit(img, (400, 300))
